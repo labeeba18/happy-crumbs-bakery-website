@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Crumbs Bakery | Freshly Baked Happiness</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Happy Crumbs 🍪</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Cookies</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#" id="cart-btn"><i class="fas fa-shopping-cart"></i> <span id="cart-count">0</span></a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Freshly Baked Happiness 🍪</h1>
+            <p>Every bite feels like home.</p>
+            <a href="#products" class="btn btn-primary">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- Featured Cookies Section -->
+    <section id="products" class="section products">
+        <div class="container">
+            <h2 class="section-title">Our Favorites</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be dynamically inserted here by script.js -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2 class="section-title">Our Story</h2>
+                <p class="quote">“I love baking because cookies don’t just taste sweet — they create sweet memories.”
+                </p>
+                <p>At Happy Crumbs, we believe in the magic of simple ingredients and a whole lot of love. Every cookie
+                    is baked fresh daily to bring a smile to your face.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery">
+        <div class="container">
+            <h2 class="section-title">Sweet Moments</h2>
+            <div class="gallery-container">
+                <div class="gallery-track">
+                    <!-- Original Set -->
+                    <div class="gallery-item"><img src="chocolate_chip_cookie.png" alt="Gallery 1"></div>
+                    <div class="gallery-item"><img src="red_velvet_cookie.png" alt="Gallery 2"></div>
+                    <div class="gallery-item"><img src="oatmeal_raisin_cookie.png" alt="Gallery 3"></div>
+                    <div class="gallery-item"><img src="peanut_butter_cookie.png" alt="Gallery 4"></div>
+                    <div class="gallery-item"><img src="double_chocolate_cookie.png" alt="Gallery 5"></div>
+                    <div class="gallery-item"><img src="chocolate_chip_cookie.png" alt="Gallery 6"></div>
+
+                    <!-- Duplicate Set for Seamless Loop -->
+                    <div class="gallery-item"><img src="chocolate_chip_cookie.png" alt="Gallery 1"></div>
+                    <div class="gallery-item"><img src="red_velvet_cookie.png" alt="Gallery 2"></div>
+                    <div class="gallery-item"><img src="oatmeal_raisin_cookie.png" alt="Gallery 3"></div>
+                    <div class="gallery-item"><img src="peanut_butter_cookie.png" alt="Gallery 4"></div>
+                    <div class="gallery-item"><img src="double_chocolate_cookie.png" alt="Gallery 5"></div>
+                    <div class="gallery-item"><img src="chocolate_chip_cookie.png" alt="Gallery 6"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="section testimonials">
+        <div class="container">
+            <h2 class="section-title">Happy Customers</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p>"The best cookies I've ever had! The chocolate chip is to die for."</p>
+                    <h4>- Sarah Jenkins</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Every bite truly feels like home. Such a cozy and wonderful bakery."</p>
+                    <h4>- Michael Brown</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Ordered for a party and everyone loved them. Highly recommended!"</p>
+                    <h4>- Emily Davis</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container contact-container">
+            <div class="contact-info">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="tagline">Made with love. Baked with happiness.</p>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 98765 43210</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@happycrumbs.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>21 Sweet Street, Bakery Lane, Mumbai, India</span>
+                </div>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>&copy; 2026 Happy Crumbs Bakery – Cookies that make you smile.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <span class="close-cart" id="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Items injected here -->
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-footer">
+                <h3>Total: <span id="cart-total">₹0</span></h3>
+                <button class="btn btn-primary checkout-btn"
+                    onclick="alert('Checkout feature coming soon!')">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
