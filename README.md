@@ -9,24 +9,6 @@ This project showcases a modern UI with smooth user experience, interactive cart
 
 ---
 
-## 🌐 Live Demo
-👉 (Add your deployed link here — GitHub Pages / Netlify)
-
----
-
-## 📸 Preview
-
-### 🏠 Home Page
-![Home](./assets/home.png)
-
-### 🛒 Shopping Cart
-![Cart](./assets/cart.png)
-
-### 📩 Contact Section
-![Contact](./assets/contact.png)
-
----
-
 ## ✨ Features
 
 - 🍪 Elegant bakery-themed UI design
